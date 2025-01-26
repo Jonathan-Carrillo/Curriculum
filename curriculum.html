@@ -8,12 +8,33 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="cv-container">
-        <h1 id="welcome-message"></h1>
+    <!-- Página de Bienvenida -->
+    <div id="welcome-container" class="welcome-container">
+        <div class="welcome-box">
+            <h1 id="welcome-message">Bienvenido al currículum de Jonathan Carrillo</h1>
+            <img src="welcome-icon.png" alt="Bienvenida" class="welcome-icon">
+
+            <div class="input-section">
+                <p id="name-prompt">Por favor ingresa tu nombre</p>
+                <input type="text" id="name-input" placeholder="Ingresa tu nombre">
+                <div>
+                    <button id="start-button" onclick="comenzar()">Comenzar</button>
+                </div>
+                <div>
+                    <button id="spanish-btn" class="lang-button">Español</button>
+                    <button id="english-btn" class="lang-button">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Curriculum -->
+    <div id="cv-container" class="cv-container" style="display:none;">
+        <h1 id="cv-name"></h1>
 
         <!-- Perfil Personal -->
         <section class="section about">
-            <h2 class="section-title">Sobre mí</h2>
+            <h2 id="section-about" class="section-title">Sobre mí</h2>
             <div class="about-content">
                 <img src="foto.jpg" alt="Foto de Perfil" class="profile-pic">
                 <p>Mi nombre es Jonathan Carrillo, vivo en Quito y estoy estudiando la carrera de Ciencia de Datos en la PUCE.</p>
@@ -23,7 +44,7 @@
 
         <!-- Educación -->
         <section class="section">
-            <h2 class="section-title">Educación</h2>
+            <h2 id="section-education" class="section-title">Educación</h2>
             <ul>
                 <li>Bachillerato como Físico-Matemático en la UEMS</li>
                 <li>Ing. Comercial en la Politécnica Salesiana</li>
@@ -32,7 +53,7 @@
 
         <!-- Experiencia -->
         <section class="section">
-            <h2 class="section-title">Experiencia</h2>
+            <h2 id="section-experience" class="section-title">Experiencia</h2>
             <ul>
                 <li>Pasantía en Netlife</li>
                 <li>Telemarketing en Nova Travel Group</li>
@@ -42,7 +63,7 @@
 
         <!-- Cursos -->
         <section class="section">
-            <h2 class="section-title">Cursos</h2>
+            <h2 id="section-courses" class="section-title">Cursos</h2>
             <ul>
                 <li>Certificado en Excel financiero</li>
                 <li>Curso de cajero bancario</li>
@@ -52,17 +73,18 @@
 
         <!-- Habilidades -->
         <section class="section">
-            <h2 class="section-title">Habilidades</h2>
+            <h2 id="section-skills" class="section-title">Habilidades</h2>
             <canvas id="skills-chart"></canvas>
         </section>
 
         <!-- Contacto -->
         <section class="section">
-            <h2 class="section-title">Contacto</h2>
+            <h2 id="section-contact" class="section-title">Contacto</h2>
             <p>Correo: <a href="mailto:jonathandct5@hotmail.com">jonathandct5@hotmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/jonathan-carrillo-98626a208" target="_blank">www.linkedin.com/in/jonathan-carrillo-98626a208</a></p>
         </section>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
