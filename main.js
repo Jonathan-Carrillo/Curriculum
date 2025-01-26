@@ -23,4 +23,3 @@ document.getElementById('lang-en').addEventListener('click', () => {
 // Mostrar el nombre del usuario en el currículum
 document
 ::contentReference[oaicite:0]{index=0}
- 
