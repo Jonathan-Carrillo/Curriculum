@@ -3,26 +3,32 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4faff;
+    background-color: #e9f5ff;
     color: #333;
 }
 
-/* Contenedor de bienvenida */
+/* Estilos para el contenedor de bienvenida */
 .welcome-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
 }
 
 .welcome-box {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
+    width: 350px;
+}
+
+.welcome-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 input {
@@ -38,19 +44,19 @@ input {
     margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #1e90ff;
     color: white;
     cursor: pointer;
 }
 
-.lang-button:hover {
-    background-color: #0056b3;
+.lang-button.selected {
+    background-color: #104e8b;
 }
 
 button {
     padding: 10px 20px;
     margin-top: 15px;
-    background-color: #007bff;
+    background-color: #1e90ff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -58,10 +64,10 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #104e8b;
 }
 
-/* Contenedor del CV */
+/* Estilos para el currículum */
 .cv-container {
     max-width: 900px;
     margin: 20px auto;
@@ -72,38 +78,28 @@ button:hover {
 }
 
 .section-title {
-    color: #007bff;
+    color: #1e90ff;
     font-size: 1.5rem;
     margin-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #1e90ff;
     display: inline-block;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
 }
 
 canvas {
-    margin: 0 auto;
+    margin: 20px auto;
     display: block;
-    max-width: 400px;
-    max-height: 400px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    max-width: 300px;
+    max-height: 300px;
 }
