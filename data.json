@@ -1,0 +1,22 @@
+{
+    "education": [
+        "Bachillerato como Físico-Matemático en la UEMS",
+        "Ing. Comercial en la Politécnica Salesiana"
+    ],
+    "experience": [
+        "Pasantía en Netlife",
+        "Telemarketing en Nova Travel Group",
+        "Ejecutivo comercial en Coris del Ecuador"
+    ],
+    "courses": [
+        "Certificado en Excel financiero",
+        "Curso de cajero bancario",
+        "Certificado en Power Bi"
+    ],
+    "skills": {
+        "Python": 35,
+        "SQL": 25,
+        "Power BI": 20,
+        "R": 20
+    }
+}
