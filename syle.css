@@ -1,111 +1,86 @@
-/* General */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
+    background-color: #f0f0f0;
     color: #333;
+}
+
+/* Contenedor de bienvenida */
+.welcome-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-.hidden {
-    display: none;
+.input-section, .language-selection {
+    margin: 10px 0;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor del CV */
+.cv-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    text-align: center;
-}
-
-/* Pantalla de bienvenida */
-#welcome-screen {
-    text-align: center;
-    background: #007bff;
-    color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#user-name {
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-#start-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background: #fff;
     color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-#start-btn:hover {
-    background: #ddd;
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
 }
 
-/* Pantalla del currículum */
-#curriculum-screen {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    font-size: 2rem;
-    color: #007bff;
+section {
     margin-bottom: 20px;
 }
 
-/* Secciones */
-.section {
-    margin: 20px 0;
-    padding: 20px;
-    border-left: 5px solid #007bff;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.section-title {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
 ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-ul li {
-    background: #eaf4ff;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-/* Imagen */
-.profile-pic {
-    display: block;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    border: 3px solid #007bff;
+a:hover {
+    text-decoration: underline;
 }
+
 
 }
 
