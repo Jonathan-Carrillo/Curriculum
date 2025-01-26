@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
             labels: ['Python', 'SQL', 'Visualización de datos', 'Estadística'],
             datasets: [{
                 data: [40, 25, 20, 15],
-                backgroundColor: ['#007bff', '#00d2ff', '#3a7bd5', '#0056b3']
+                backgroundColor: ['#1e90ff', '#00bfff', '#87cefa', '#4682b4']
             }]
         }
     });
