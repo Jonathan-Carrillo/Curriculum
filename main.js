@@ -1,7 +1,7 @@
-// Redirigir al currículum con el nombre y el idioma seleccionados
+// Redirigir al currículum con nombre e idioma
 document.getElementById('go-button').addEventListener('click', () => {
     const name = document.getElementById('user-name').value;
-    const language = document.querySelector('button.selected')?.id === 'lang-en' ? 'en' : 'es';
+    const language = document.querySelector('.lang-button.selected')?.id === 'lang-en' ? 'en' : 'es';
     if (name) {
         window.location.href = `curriculum.html?name=${encodeURIComponent(name)}&language=${language}`;
     } else {
@@ -9,17 +9,24 @@ document.getElementById('go-button').addEventListener('click', () => {
     }
 });
 
-// Selección de idioma
-document.getElementById('lang-es').addEventListener('click', () => {
-    document.getElementById('lang-es').classList.add('selected');
-    document.getElementById('lang-en').classList.remove('selected');
+document.querySelectorAll('.lang-button').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.lang-button').forEach(btn => btn.classList.remove('selected'));
+        button.classList.add('selected');
+    });
 });
 
-document.getElementById('lang-en').addEventListener('click', () => {
-    document.getElementById('lang-en').classList.add('selected');
-    document.getElementById('lang-es').classList.remove('selected');
+// Habilidades - gráfico de pie
+window.addEventListener('DOMContentLoaded', () => {
+    const ctx = document.getElementById('skills-chart').getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Python', 'SQL', 'Visualización de datos', 'Estadística'],
+            datasets: [{
+                data: [40, 25, 20, 15],
+                backgroundColor: ['#007bff', '#00d2ff', '#3a7bd5', '#0056b3']
+            }]
+        }
+    });
 });
-
-// Mostrar el nombre del usuario en el currículum
-document
-::contentReference[oaicite:0]{index=0}
