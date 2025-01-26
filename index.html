@@ -3,63 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Jonathan Carrillo</title>
+    <title>Curriculum de Jonathan Carrillo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="welcome-screen">
-        <h1>Bienvenido a mi Curriculum Vitae</h1>
+    <div id="welcome-screen" class="screen">
+        <h1>¡Bienvenido!</h1>
         <p>Por favor, ingresa tu nombre para continuar:</p>
-        <input type="text" id="user-name" placeholder="Tu nombre aquí">
-        <button id="enter-btn">Entrar</button>
+        <input type="text" id="user-name" placeholder="Escribe tu nombre aquí...">
+        <button id="start-btn">Ver mi currículum</button>
     </div>
 
-    <div id="curriculum" style="display: none;">
-        <header>
-            <h1>Curriculum Vitae</h1>
-        </header>
+    <div id="curriculum-screen" class="screen hidden">
+        <h1 class="header">Curriculum Vitae</h1>
 
         <!-- Sección Sobre mí -->
-        <section class="about">
-            <h2>Sobre mí</h2>
-            <div class="content">
-                <img src="foto.jpg" alt="Foto de Perfil" class="profile-pic">
-                <p>Mi nombre es Jonathan Carrillo, vivo en Quito y estoy estudiando la carrera de Ciencia de Datos en la PUCE.</p>
-                <p>Tengo conocimientos en el manejo de bases de datos utilizando lenguajes de programación y visualización de datos.</p>
-            </div>
-        </section>
+        <div class="section">
+            <h2 class="section-title">Sobre mí</h2>
+            <img src="foto.jpg" alt="Foto de Jonathan Carrillo" class="profile-pic">
+            <p>Mi nombre es Jonathan Carrillo, vivo en Quito y estoy estudiando la carrera de Ciencia de Datos en la PUCE.</p>
+            <p>Tengo conocimientos en el manejo de bases de datos utilizando lenguajes de programación y visualización de datos.</p>
+        </div>
 
         <!-- Sección Educación -->
-        <section class="education">
-            <h2>Educación</h2>
-            <ul id="education-list"></ul>
-        </section>
+        <div class="section">
+            <h2 class="section-title">Educación</h2>
+            <ul>
+                <li>Bachillerato como Físico-Matemático en la UEMS</li>
+                <li>Ingeniería Comercial en la Politécnica Salesiana</li>
+            </ul>
+        </div>
 
         <!-- Sección Experiencia -->
-        <section class="experience">
-            <h2>Experiencia</h2>
-            <ul id="experience-list"></ul>
-        </section>
+        <div class="section">
+            <h2 class="section-title">Experiencia</h2>
+            <ul>
+                <li>Pasantía en Netlife</li>
+                <li>Telemarketing en Nova Travel Group</li>
+                <li>Ejecutivo comercial en Coris del Ecuador</li>
+            </ul>
+        </div>
 
         <!-- Sección Cursos -->
-        <section class="courses">
-            <h2>Cursos</h2>
-            <ul id="courses-list"></ul>
-        </section>
-
-        <!-- Sección Habilidades -->
-        <section class="skills">
-            <h2>Habilidades</h2>
-            <canvas id="skills-chart"></canvas>
-        </section>
+        <div class="section">
+            <h2 class="section-title">Cursos</h2>
+            <ul>
+                <li>Certificado en Excel financiero</li>
+                <li>Curso de cajero bancario</li>
+                <li>Certificado en Power BI</li>
+            </ul>
+        </div>
 
         <!-- Sección Contacto -->
-        <section class="contact">
-            <h2>Contacto</h2>
+        <div class="section">
+            <h2 class="section-title">Contacto</h2>
             <p>Correo: <a href="mailto:jonathandct5@hotmail.com">jonathandct5@hotmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jonathan-carrillo-98626a208" target="_blank">www.linkedin.com/in/jonathan-carrillo-98626a208</a></p>
-        </section>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jonathan-carrillo-98626a208" target="_blank">
+                www.linkedin.com/in/jonathan-carrillo-98626a208
+            </a></p>
+        </div>
     </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js"></script>
